@@ -26,6 +26,10 @@ from .fgvc_aircraft import FGVCAircraft
 from .flowers102 import Flowers102
 from .food101 import Food101
 from .hasy_v2 import HASYv2
+from .imagenet import Imagenet
+from .imagenet_1k import ImageNet1K
+from .imagenet_100 import ImageNet100
+from .imagenet_10 import ImageNet10
 from .imagenette import Imagenette
 from .k_mnist import KMNIST
 from .linnaeus5 import Linnaeus5
@@ -69,6 +73,10 @@ __all__ = [
     "Flowers102",
     "Food101",
     "HASYv2",
+    "Imagenet",
+    "ImageNet1K",
+    "ImageNet100",
+    "ImageNet10",
     "Imagenette",
     "KMNIST",
     "Linnaeus5",

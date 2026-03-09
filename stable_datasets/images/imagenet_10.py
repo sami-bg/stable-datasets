@@ -23,8 +23,8 @@ _IN10_CLASSES = [
 ]
 
 
-class Imagenette(BaseDatasetBuilder):
-    """Imagenette dataset from FastAI archive, without Hugging Face hub dependency."""
+class ImageNet10(BaseDatasetBuilder):
+    """Imagenette (ImageNet-10) from FastAI's public tarball."""
 
     VERSION = Version("2.0.0")
     SOURCE = {
