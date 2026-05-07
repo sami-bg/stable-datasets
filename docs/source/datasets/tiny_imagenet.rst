@@ -43,7 +43,7 @@ Usage Example
 
 .. code-block:: text
 
-		from stable_datasets.images.tiny_imagenet import TinyImagenet
+		from anonymous_datasets.images.tiny_imagenet import TinyImagenet
 
 		# First run will download + prepare cache, then return the split as a HF Dataset
 		ds = TinyImagenet(split="train")

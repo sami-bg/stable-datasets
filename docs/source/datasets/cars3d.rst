@@ -79,7 +79,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.cars3d import Cars3D
+    from anonymous_datasets.images.cars3d import Cars3D
 
     ds = Cars3D(split="train")
 

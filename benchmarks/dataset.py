@@ -1,6 +1,6 @@
 """Dataset loading for SSL benchmarks.
 
-Loads image classification datasets from stable_datasets and wraps them
+Loads image classification datasets from anonymous_datasets and wraps them
 as a ``spt.data.DataModule``.  Transform and collation logic lives in
 the individual model files (``models/*.py``).
 """
@@ -13,11 +13,11 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
-import stable_pretraining as spt
+import anonymous_pretraining_lib as spt
 import torch
 
-import stable_datasets as sds
-from stable_datasets.schema import ClassLabel
+import anonymous_datasets as sds
+from anonymous_datasets.schema import ClassLabel
 
 
 log = logging.getLogger(__name__)

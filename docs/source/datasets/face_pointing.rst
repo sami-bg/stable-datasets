@@ -52,7 +52,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.face_pointing import FacePointing
+    from anonymous_datasets.images.face_pointing import FacePointing
 
     # Load the training split
     ds = FacePointing(split="train")
@@ -70,7 +70,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.face_pointing import FacePointing
+    from anonymous_datasets.images.face_pointing import FacePointing
     import torch
     from torch.utils.data import DataLoader
 
@@ -91,7 +91,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.face_pointing import FacePointing
+    from anonymous_datasets.images.face_pointing import FacePointing
     import numpy as np
 
     ds = FacePointing(split="train")

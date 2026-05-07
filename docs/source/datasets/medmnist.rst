@@ -12,7 +12,7 @@ MedMNIST
 Overview
 --------
 
-MedMNIST is a large-scale MNIST-like collection of standardized biomedical images. In stable-datasets, MedMNIST is exposed via the `MedMNIST` class, but **the actual dataset depends on the selected variant** (passed as ``config_name``, e.g. ``dermamnist``, ``pathmnist``). Each variant provides train/validation/test splits.
+MedMNIST is a large-scale MNIST-like collection of standardized biomedical images. In anonymous-datasets, MedMNIST is exposed via the `MedMNIST` class, but **the actual dataset depends on the selected variant** (passed as ``config_name``, e.g. ``dermamnist``, ``pathmnist``). Each variant provides train/validation/test splits.
 
 All 2D variants are pre-processed to **28×28** images and all 3D variants are pre-processed to **28×28×28** volumes, with corresponding labels.
 
@@ -199,7 +199,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.med_mnist import MedMNIST
+    from anonymous_datasets.images.med_mnist import MedMNIST
 
     # Pick a 2D variant via config_name
     variant = "dermamnist"
@@ -221,7 +221,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.med_mnist import MedMNIST
+    from anonymous_datasets.images.med_mnist import MedMNIST
 
     variant = "chestmnist"
     ds_train = MedMNIST(split="train", config_name=variant)
@@ -238,7 +238,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.med_mnist import MedMNIST
+    from anonymous_datasets.images.med_mnist import MedMNIST
 
     variant = "organmnist3d"
 

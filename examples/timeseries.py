@@ -1,6 +1,6 @@
-"""Time-series / audio dataset example for stable-datasets."""
+"""Time-series / audio dataset example for anonymous-datasets."""
 
-from stable_datasets.timeseries import AudioMNIST
+from anonymous_datasets.timeseries import AudioMNIST
 
 
 def main() -> None:

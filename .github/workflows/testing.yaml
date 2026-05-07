@@ -49,7 +49,7 @@ jobs:
         run: |
           set -o pipefail
 
-          pytest stable_datasets/ \
+          pytest anonymous_datasets/ \
             -m "not large" \
             --verbose \
             --durations=0 \
@@ -57,7 +57,7 @@ jobs:
             --group ${{ matrix.shard }} \
             --splitting-algorithm least_duration \
             --store-durations \
-            --cov=stable_datasets \
+            --cov=anonymous_datasets \
             --cov-report=term-missing:skip-covered \
             --cov-report=term
 

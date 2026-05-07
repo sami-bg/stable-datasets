@@ -99,7 +99,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.dsprites_noisy import DSpritesNoisy
+    from anonymous_datasets.images.dsprites_noisy import DSpritesNoisy
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = DSpritesNoisy(split="train")

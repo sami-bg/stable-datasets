@@ -1,12 +1,12 @@
 Datasets
 ========
 
-This section provides detailed documentation for all datasets available in stable-datasets.
+This section provides detailed documentation for all datasets available in anonymous-datasets.
 
 Overview
 --------
 
-stable-datasets provides easy access to a wide variety of datasets for machine learning research, with a focus on stability and reproducibility. Each dataset page includes:
+anonymous-datasets provides easy access to a wide variety of datasets for machine learning research, with a focus on stability and reproducibility. Each dataset page includes:
 
 - **Example Samples**: Visual examples or data snippets from the dataset
 - **Dataset Details**: Number of classes, target types, and data specifications
@@ -22,7 +22,7 @@ All datasets can be loaded using the same consistent API:
 
 .. code-block:: python
 
-    from stable_datasets.images.<dataset_module> import <DatasetClass>
+    from anonymous_datasets.images.<dataset_module> import <DatasetClass>
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = <DatasetClass>(split="train")

@@ -16,8 +16,8 @@ import pandas as pd
 import requests
 
 
-DEFAULT_ENTITY = "samibg"
-DEFAULT_PROJECT = "finalized-stable-datasets"
+DEFAULT_ENTITY = ""
+DEFAULT_PROJECT = "finalized-anonymous-datasets"
 DEFAULT_BACKBONE = "vit_small_patch16_224"
 DEFAULT_BACKBONES: tuple[str, ...] = (DEFAULT_BACKBONE, "vit_small")
 

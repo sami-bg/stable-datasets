@@ -56,7 +56,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.food101 import Food101
+    from anonymous_datasets.images.food101 import Food101
 
     # Load training split
     ds = Food101(split="train")

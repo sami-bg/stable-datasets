@@ -1,8 +1,8 @@
-# stable-datasets
+# anonymous-datasets
 
-`stable-datasets` is a research-oriented dataset library for images, time series/audio, and video. It is built around a simple idea: dataset onboarding should be easy, storage should be explicit, and the object you load should already be usable in PyTorch-style training code.
+`anonymous-datasets` is a research-oriented dataset library for images, time series/audio, and video. It is built around a simple idea: dataset onboarding should be easy, storage should be explicit, and the object you load should already be usable in PyTorch-style training code.
 
-The library ships dataset builders under `stable_datasets/images/`, `stable_datasets/timeseries/`, and `stable_datasets/video/`. On first load, a builder downloads raw assets, writes a processed cache, and returns a map-style `StableDataset` or `StableDatasetDict`. After that, repeated loads hit the processed cache directly.
+The library ships dataset builders under `anonymous_datasets/images/`, `anonymous_datasets/timeseries/`, and `anonymous_datasets/video/`. On first load, a builder downloads raw assets, writes a processed cache, and returns a map-style `AnonDataset` or `AnonDatasetDict`. After that, repeated loads hit the processed cache directly.
 
 ## What This Library Is For
 
@@ -23,10 +23,10 @@ pip install -e .
 pip install -e ".[dev,docs]"
 ```
 
-By default, downloads and processed caches live under `~/.stable_datasets/`. You can override the root with:
+By default, downloads and processed caches live under `~/.anonymous_datasets/`. You can override the root with:
 
 ```bash
-export STABLE_DATASETS_CACHE_DIR=/data/stable_datasets
+export ANONYMOUS_DATASETS_CACHE_DIR=/data/anonymous_datasets
 ```
 
 or pass `download_dir=` / `processed_cache_dir=` per dataset.
@@ -42,7 +42,7 @@ The `examples/` directory contains small, runnable examples:
 ### Image example
 
 ```python
-from stable_datasets.images import CIFAR10
+from anonymous_datasets.images import CIFAR10
 
 ds = CIFAR10(split="train")
 sample = ds[0]
@@ -59,7 +59,7 @@ print(torch_sample["image"].shape)  # C x H x W
 ### Time-series example
 
 ```python
-from stable_datasets.timeseries import AudioMNIST
+from anonymous_datasets.timeseries import AudioMNIST
 
 ds = AudioMNIST(split="train")
 sample = ds[0]
@@ -75,8 +75,8 @@ print(np_sample["series"].shape)
 ### Video example
 
 ```python
-from stable_datasets import VideoDecodeConfig
-from stable_datasets.video import SSv2
+from anonymous_datasets import VideoDecodeConfig
+from anonymous_datasets.video import SSv2
 
 ds = SSv2(split="train", storage_format="lance")
 sample = ds[0]
@@ -108,7 +108,7 @@ The library has four main layers:
    Each dataset defines provenance, schema, and example generation. Builders are responsible for sourcing raw data and yielding Python examples.
 
 2. Cache writers
-   The cache layer turns builder output into a processed on-disk representation. Most datasets use the generic row-per-example writers in `stable_datasets/cache.py`.
+   The cache layer turns builder output into a processed on-disk representation. Most datasets use the generic row-per-example writers in `anonymous_datasets/cache.py`.
 
 3. Storage backends
    Backends reopen processed caches and provide row access. The main layouts today are:
@@ -116,27 +116,27 @@ The library has four main layers:
    - `lance-rows`
    - `lance-video-frames`
 
-4. `StableDataset`
+4. `AnonDataset`
    The dataset object presents a uniform map-style API, handles formatting, and optionally applies read-time video decoding.
 
 The practical flow is:
 
 ```text
-Builder -> cache writer -> backend -> formatter -> StableDataset
+Builder -> cache writer -> backend -> formatter -> AnonDataset
 ```
 
 ### Repository shape
 
-- `stable_datasets/schema.py`
+- `anonymous_datasets/schema.py`
   Public schema surface plus dataset metadata/config types.
-- `stable_datasets/features/`
+- `anonymous_datasets/features/`
   Feature implementations such as `Image`, `Video`, `Array3D`, `ClassLabel`, and `Value`.
-- `stable_datasets/backends/`
+- `anonymous_datasets/backends/`
   Physical storage layouts and read-side logic.
-- `stable_datasets/cache.py`
+- `anonymous_datasets/cache.py`
   Cache writers, metadata, and cache opening.
-- `stable_datasets/dataset.py`
-  `StableDataset`, `StableDatasetDict`, and read-time video decode integration.
+- `anonymous_datasets/dataset.py`
+  `AnonDataset`, `AnonDatasetDict`, and read-time video decode integration.
 
 ### Features and schema
 
@@ -207,7 +207,7 @@ This keeps decode policy out of the persisted schema and lets users swap decoder
 Custom hooks are also supported:
 
 - `decode_fn` for per-sample custom decode
-- `decode_fn_batched` for worker-local batched decode inside `StableDataset.__getitems__`
+- `decode_fn_batched` for worker-local batched decode inside `AnonDataset.__getitems__`
 
 ### The frame-WebP Lance layout
 
@@ -242,7 +242,7 @@ This layout is aimed at workloads like video SSL or action recognition where rep
 
 To add a new dataset:
 
-1. choose the right modality package under `stable_datasets/`
+1. choose the right modality package under `anonymous_datasets/`
 2. subclass `BaseDatasetBuilder`
 3. define `VERSION` and `SOURCE`
 4. implement `_info()`
@@ -257,4 +257,4 @@ The main contract is that `_info()` and `_generate_examples(...)` must agree exa
 pytest -q
 ```
 
-For targeted work, run the relevant subset under `stable_datasets/tests/`.
+For targeted work, run the relevant subset under `anonymous_datasets/tests/`.

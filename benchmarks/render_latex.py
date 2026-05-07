@@ -474,8 +474,8 @@ METRIC_TITLES: dict[str, str] = {
 
 def main():
     parser = argparse.ArgumentParser(description="Render benchmark results from W&B to LaTeX")
-    parser.add_argument("--entity", default="samibg")
-    parser.add_argument("--project", default="finalized-stable-datasets")
+    parser.add_argument("--entity", default="")
+    parser.add_argument("--project", default="finalized-anonymous-datasets")
     parser.add_argument(
         "--from-csv",
         action="store_true",

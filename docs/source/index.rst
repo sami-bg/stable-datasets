@@ -3,14 +3,14 @@
    :twitter:description: Create functional and beautiful websites for your documentation with Sphinx and the Awesome Sphinx Theme.
 
 
-stable-datasets
+anonymous-datasets
 ===============
 
 .. rst-class:: lead
 
    A comprehensive collection of stable, reproducible datasets for machine learning research.
 
-Welcome to the docs for stable-datasets.
+Welcome to the docs for anonymous-datasets.
 We recommend using ``python>=3.10``, and installation using ``uv``:
 
 .. tab-set::
@@ -19,21 +19,20 @@ We recommend using ``python>=3.10``, and installation using ``uv``:
 
         .. code-block:: bash
 
-            uv add stable-datasets
+            uv add anonymous-datasets
 
     .. tab-item:: pip
 
         .. code-block:: bash
 
-            pip install stable-datasets
+            pip install anonymous-datasets
 
 
-If you would like to start testing or contribute to ``stable-datasets`` then please install this project from source with:
+If you would like to start testing or contribute to ``anonymous-datasets`` then please install this project from source with:
 
 .. code-block:: bash
 
-    git clone https://github.com/rbalestr-lab/stable-datasets.git --single-branch
-    cd stable-datasets
+    cd anonymous-datasets
     pip install -e .
 
 .. toctree::
@@ -53,7 +52,7 @@ If you find this library useful in your research, please consider citing us:
 
 .. code-block:: bibtex
 
-    @misc{stable-datasets,
+    @misc{anonymous-datasets,
       author = {},
       title = {},
       year = {2025},

@@ -55,7 +55,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.stl10 import STL10
+    from anonymous_datasets.images.stl10 import STL10
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds_train = STL10(split="train")

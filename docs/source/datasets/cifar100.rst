@@ -50,7 +50,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.cifar100 import CIFAR100
+    from anonymous_datasets.images.cifar100 import CIFAR100
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = CIFAR100(split="train")
@@ -68,8 +68,8 @@ Related Datasets
 ----------------
 
 - :doc:`cifar10`: Simplified version with 10 classes, sharing the same image dimensions
-- **CIFAR-10-C**: Corrupted version of CIFAR-10 for testing robustness (available in stable-datasets as ``cifar10_c``)
-- **CIFAR-100-C**: Corrupted version of CIFAR-100 (available in stable-datasets as ``cifar100_c``)
+- **CIFAR-10-C**: Corrupted version of CIFAR-10 for testing robustness (available in anonymous-datasets as ``cifar10_c``)
+- **CIFAR-100-C**: Corrupted version of CIFAR-100 (available in anonymous-datasets as ``cifar100_c``)
 
 References
 ----------

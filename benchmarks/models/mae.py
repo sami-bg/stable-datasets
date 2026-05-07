@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import logging
 
-import stable_pretraining as spt
-from stable_pretraining.data import transforms
+import anonymous_pretraining_lib as spt
+from anonymous_pretraining_lib.data import transforms
 
 from benchmarks.models import (
     build_optim_config,

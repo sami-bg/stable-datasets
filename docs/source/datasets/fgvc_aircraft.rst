@@ -81,7 +81,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.fgvc_aircraft import FGVCAircraft
+    from anonymous_datasets.images.fgvc_aircraft import FGVCAircraft
 
     # Load variant configuration (100 classes, finest granularity)
     ds_train = FGVCAircraft(config_name="variant", split="train")
@@ -101,7 +101,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.fgvc_aircraft import FGVCAircraft
+    from anonymous_datasets.images.fgvc_aircraft import FGVCAircraft
 
     # Family configuration (70 classes)
     ds_family = FGVCAircraft(config_name="family", split="train")
@@ -121,7 +121,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.fgvc_aircraft import FGVCAircraft
+    from anonymous_datasets.images.fgvc_aircraft import FGVCAircraft
 
     # Get a DatasetDict with all splits
     ds_all = FGVCAircraft(config_name="variant", split=None)

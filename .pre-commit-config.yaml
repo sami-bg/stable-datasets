@@ -1,4 +1,4 @@
-# Pre-commit hooks for stable-datasets
+# Pre-commit hooks for anonymous-datasets
 # See https://pre-commit.com for more information
 
 default_language_version:

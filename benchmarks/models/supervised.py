@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import stable_pretraining as spt
+import anonymous_pretraining_lib as spt
 from torch import nn
 
 from benchmarks.models import (

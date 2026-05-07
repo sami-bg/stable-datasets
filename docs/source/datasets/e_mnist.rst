@@ -91,7 +91,7 @@ You must specify a ``config_name`` when loading EMNIST to choose the split (e.g.
 
 .. code-block:: python
 
-    from stable_datasets.images.e_mnist import EMNIST
+    from anonymous_datasets.images.e_mnist import EMNIST
 
     # Load the 'digits' variant (0-9)
     ds_train = EMNIST(config_name="digits", split="train")

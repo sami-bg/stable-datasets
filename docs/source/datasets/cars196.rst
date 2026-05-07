@@ -47,7 +47,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.cars196 import Cars196
+    from anonymous_datasets.images.cars196 import Cars196
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = Cars196(split="train")

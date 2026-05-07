@@ -47,7 +47,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.linnaeus5 import Linnaeus5
+    from anonymous_datasets.images.linnaeus5 import Linnaeus5
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds_train = Linnaeus5(split="train")

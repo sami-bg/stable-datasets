@@ -2,11 +2,11 @@
 
 from __future__ import annotations
 
-import stable_pretraining as spt
+import anonymous_pretraining_lib as spt
 import torch
 import torch.nn.functional as F
-from stable_pretraining.data import transforms
-from stable_pretraining.forward import _get_views_by_prefix
+from anonymous_pretraining_lib.data import transforms
+from anonymous_pretraining_lib.forward import _get_views_by_prefix
 from torch import nn
 
 from benchmarks.models import (

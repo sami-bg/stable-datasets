@@ -103,7 +103,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.shapes3d import Shapes3D
+    from anonymous_datasets.images.shapes3d import Shapes3D
 
     ds = Shapes3D(split="train")
 

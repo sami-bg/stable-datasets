@@ -48,7 +48,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.flowers102 import Flowers102
+    from anonymous_datasets.images.flowers102 import Flowers102
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds_train = Flowers102(split="train")

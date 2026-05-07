@@ -47,7 +47,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.rock_paper_scissor import RockPaperScissor
+    from anonymous_datasets.images.rock_paper_scissor import RockPaperScissor
 
     # Load the training split
     ds = RockPaperScissor(split="train")
@@ -64,7 +64,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.rock_paper_scissor import RockPaperScissor
+    from anonymous_datasets.images.rock_paper_scissor import RockPaperScissor
     import torch
     from torch.utils.data import DataLoader
 
@@ -84,7 +84,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.rock_paper_scissor import RockPaperScissor
+    from anonymous_datasets.images.rock_paper_scissor import RockPaperScissor
 
     ds = RockPaperScissor(split="train")
 

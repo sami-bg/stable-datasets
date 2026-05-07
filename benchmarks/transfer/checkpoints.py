@@ -35,7 +35,7 @@ log = logging.getLogger(__name__)
 
 CHECKPOINT_DIR = Path(
     os.environ.get(
-        "STABLE_DATASETS_TRANSFER_CKPT_DIR",
+        "ANONYMOUS_DATASETS_TRANSFER_CKPT_DIR",
         Path(__file__).resolve().parent / "checkpoints",
     )
 )

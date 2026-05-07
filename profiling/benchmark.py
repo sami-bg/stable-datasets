@@ -292,7 +292,7 @@ class TimedCollate:
 
 
 def load_stable_dataset(args: argparse.Namespace):
-    import stable_datasets as sds
+    import anonymous_datasets as sds
 
     dataset_kwargs = {"split": "train"}
     if args.download_dir is not None:

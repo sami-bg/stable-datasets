@@ -99,7 +99,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.smallnorb import SmallNORB
+    from anonymous_datasets.images.smallnorb import SmallNORB
 
     # Load training split
     ds = SmallNORB(split="train")

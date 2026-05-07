@@ -77,7 +77,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.galaxy10 import Galaxy10Decal
+    from anonymous_datasets.images.galaxy10 import Galaxy10Decal
 
     # Load the dataset (only "train" split available)
     ds = Galaxy10Decal(split="train")
@@ -101,7 +101,7 @@ Since Galaxy10 does not have pre-defined splits, you can create your own:
 
 .. code-block:: python
 
-    from stable_datasets.images.galaxy10 import Galaxy10Decal
+    from anonymous_datasets.images.galaxy10 import Galaxy10Decal
     from sklearn.model_selection import train_test_split
 
     # Load full dataset
@@ -121,7 +121,7 @@ Since Galaxy10 does not have pre-defined splits, you can create your own:
 
 .. code-block:: python
 
-    from stable_datasets.images.galaxy10 import Galaxy10Decal
+    from anonymous_datasets.images.galaxy10 import Galaxy10Decal
     import numpy as np
 
     ds = Galaxy10Decal(split="train")

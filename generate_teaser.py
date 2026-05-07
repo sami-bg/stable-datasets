@@ -38,17 +38,17 @@ def generate_teaser(
     """
     # Try to import the dataset
     try:
-        # Try loading from stable_datasets.images
-        module = importlib.import_module("stable_datasets.images")
+        # Try loading from anonymous_datasets.images
+        module = importlib.import_module("anonymous_datasets.images")
         dataset_class = getattr(module, dataset_name)
     except (ImportError, AttributeError):
         try:
-            # Try loading from stable_datasets.timeseries
-            module = importlib.import_module("stable_datasets.timeseries")
+            # Try loading from anonymous_datasets.timeseries
+            module = importlib.import_module("anonymous_datasets.timeseries")
             dataset_class = getattr(module, dataset_name)
         except (ImportError, AttributeError):
             raise ValueError(
-                f"Dataset '{dataset_name}' not found in stable_datasets.images or stable_datasets.timeseries"
+                f"Dataset '{dataset_name}' not found in anonymous_datasets.images or anonymous_datasets.timeseries"
             )
 
     # Load the dataset
@@ -175,7 +175,7 @@ def generate_teaser(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Generate teaser figures for stable-datasets",
+        description="Generate teaser figures for anonymous-datasets",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:

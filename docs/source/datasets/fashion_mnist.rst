@@ -47,7 +47,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.fashion_mnist import FashionMNIST
+    from anonymous_datasets.images.fashion_mnist import FashionMNIST
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = FashionMNIST(split="train")

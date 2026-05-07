@@ -84,7 +84,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.cifar10_c import CIFAR10C
+    from anonymous_datasets.images.cifar10_c import CIFAR10C
 
     # Load the test set (only split available)
     ds = CIFAR10C(split="test")
@@ -100,8 +100,8 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.cifar10 import CIFAR10
-    from stable_datasets.images.cifar10_c import CIFAR10C
+    from anonymous_datasets.images.cifar10 import CIFAR10
+    from anonymous_datasets.images.cifar10_c import CIFAR10C
 
     # Train on clean CIFAR-10
     train_data = CIFAR10(split="train")

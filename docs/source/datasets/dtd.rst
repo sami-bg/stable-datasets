@@ -48,7 +48,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.dtd import DTD
+    from anonymous_datasets.images.dtd import DTD
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = DTD(split="train")

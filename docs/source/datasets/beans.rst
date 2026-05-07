@@ -64,7 +64,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.beans import Beans
+    from anonymous_datasets.images.beans import Beans
 
     # Load different splits
     train_ds = Beans(split="train")
@@ -83,7 +83,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.beans import Beans
+    from anonymous_datasets.images.beans import Beans
 
     ds = Beans(split="train")
     
@@ -100,7 +100,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.beans import Beans
+    from anonymous_datasets.images.beans import Beans
     from torchvision import transforms
     from torch.utils.data import DataLoader
 

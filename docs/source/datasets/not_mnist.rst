@@ -48,7 +48,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.not_mnist import NotMNIST
+    from anonymous_datasets.images.not_mnist import NotMNIST
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = NotMNIST(split="train")

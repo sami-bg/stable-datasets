@@ -100,7 +100,7 @@ Usage Example
 .. code-block:: python
 
     import json
-    from stable_datasets.images.clevrer import CLEVRER
+    from anonymous_datasets.images.clevrer import CLEVRER
 
     # Load the train split
     ds = CLEVRER(split="train")

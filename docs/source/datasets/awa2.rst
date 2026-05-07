@@ -56,7 +56,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.awa2 import AWA2
+    from anonymous_datasets.images.awa2 import AWA2
 
     # Load the test set (only split available)
     ds = AWA2(split="test")
@@ -76,7 +76,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.awa2 import AWA2
+    from anonymous_datasets.images.awa2 import AWA2
 
     ds = AWA2(split="test")
     
@@ -92,7 +92,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.awa2 import AWA2
+    from anonymous_datasets.images.awa2 import AWA2
 
     ds = AWA2(split="test")
     

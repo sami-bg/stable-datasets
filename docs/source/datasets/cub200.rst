@@ -44,7 +44,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.cub200 import CUB200
+    from anonymous_datasets.images.cub200 import CUB200
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = CUB200(split="train")

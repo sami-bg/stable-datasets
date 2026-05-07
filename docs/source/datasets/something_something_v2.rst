@@ -6,8 +6,8 @@ showing people performing fine-grained actions with everyday objects.
 
 The dataset is distributed by Qualcomm under a non-standard data license. The
 builder uses the Qualcomm download package and follows the normal
-``stable-datasets`` cache rules. On machines with small home quotas, set
-``STABLE_DATASETS_CACHE_DIR`` before loading the dataset, or pass
+``anonymous-datasets`` cache rules. On machines with small home quotas, set
+``ANONYMOUS_DATASETS_CACHE_DIR`` before loading the dataset, or pass
 ``download_dir=`` and ``processed_cache_dir=`` explicitly.
 
 Usage
@@ -15,7 +15,7 @@ Usage
 
 .. code-block:: python
 
-   from stable_datasets.video import SomethingSomethingV2
+   from anonymous_datasets.video import SomethingSomethingV2
 
    ds = SomethingSomethingV2(split="train")
    sample = ds[0]
@@ -29,7 +29,7 @@ For large local scratch volumes, set the cache root before launching Python:
 
 .. code-block:: bash
 
-   export STABLE_DATASETS_CACHE_DIR=~/scratch/stable-datasets
+   export ANONYMOUS_DATASETS_CACHE_DIR=~/scratch/anonymous-datasets
 
 Local Data
 ----------

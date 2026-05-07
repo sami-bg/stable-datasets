@@ -8,14 +8,14 @@ from datetime import date
 
 from sphinxawesome_theme.postprocess import Icons
 
-from stable_datasets import __version__
+from anonymous_datasets import __version__
 
 
 # -- Project information ---
 
-project = "stable-datasets"
-copyright = "2025, Randall Balestriero"
-author = "Randall Balestriero"
+project = "anonymous-datasets"
+copyright = "2025, Anonymous Authors"
+author = "Anonymous Authors"
 release = __version__
 current_year = date.today().year
 copyright = f"{current_year}"
@@ -87,7 +87,7 @@ html_css_files = [
 
 html_show_sourcelink = False
 html_copy_source = False
-html_title = "stable-datasets"
+html_title = "anonymous-datasets"
 html_theme = "sphinxawesome_theme"
 html_favicon = "_static/img/favicon.ico"
 
@@ -98,7 +98,7 @@ html_theme_options = {
     "show_scrolltop": True,
     "extra_header_link_icons": {
         "repository on GitHub": {
-            "link": "https://github.com/rbalestr-lab/stable-datasets",
+            "link": "#",
             "icon": (
                 '<svg height="26px" style="margin-top:-2px;display:inline" '
                 'viewBox="0 0 45 44" '

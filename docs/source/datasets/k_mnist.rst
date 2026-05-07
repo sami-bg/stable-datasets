@@ -47,7 +47,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.k_mnist import KMNIST
+    from anonymous_datasets.images.k_mnist import KMNIST
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = KMNIST(split="train")

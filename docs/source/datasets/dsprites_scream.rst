@@ -108,7 +108,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.dsprites_scream import DSpritesScream
+    from anonymous_datasets.images.dsprites_scream import DSpritesScream
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = DSpritesScream(split="train")

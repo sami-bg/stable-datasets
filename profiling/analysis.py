@@ -9,8 +9,8 @@ from pathlib import Path
 BACKEND_ORDER = ["hf", "pyarrow", "lance"]
 BACKEND_LABELS = {
     "hf": "HF Datasets",
-    "pyarrow": "stable-datasets Arrow",
-    "lance": "stable-datasets Lance",
+    "pyarrow": "anonymous-datasets Arrow",
+    "lance": "anonymous-datasets Lance",
 }
 PARALLELISM_ORDER = [0, 1, 4, 8, 16, 32]
 
@@ -218,7 +218,7 @@ def write_environment_table(output_path: Path) -> None:
                 "nfs_version,3",
                 "transport,rdma",
                 "nconnect,8",
-                "mount,hpcnfs:/oscar/home/sboughan/stable-datasets-pyarrow",
+                "mount,hpcnfs:.",
             ]
         )
         + "\n"

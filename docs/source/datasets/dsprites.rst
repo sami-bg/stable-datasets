@@ -91,7 +91,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.dsprites import DSprites
+    from anonymous_datasets.images.dsprites import DSprites
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = DSprites(split="train")

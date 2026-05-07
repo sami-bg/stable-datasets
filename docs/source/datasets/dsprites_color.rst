@@ -102,7 +102,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.dsprites_color import DSpritesColor
+    from anonymous_datasets.images.dsprites_color import DSpritesColor
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = DSpritesColor(split="train")

@@ -1,6 +1,6 @@
-"""Image dataset example for stable-datasets."""
+"""Image dataset example for anonymous-datasets."""
 
-from stable_datasets.images import CIFAR10
+from anonymous_datasets.images import CIFAR10
 
 
 def main() -> None:

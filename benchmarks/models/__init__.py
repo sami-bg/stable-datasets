@@ -12,13 +12,13 @@ from __future__ import annotations
 import logging
 from collections.abc import Mapping
 
-import stable_pretraining as spt
+import anonymous_pretraining_lib as spt
 import torch
 import torchmetrics
 from lightning.pytorch.callbacks import LearningRateMonitor
-from stable_pretraining.callbacks.lidar import LiDAR
-from stable_pretraining.callbacks.rankme import RankMe
-from stable_pretraining.data import transforms
+from anonymous_pretraining_lib.callbacks.lidar import LiDAR
+from anonymous_pretraining_lib.callbacks.rankme import RankMe
+from anonymous_pretraining_lib.data import transforms
 from torch import nn
 
 from benchmarks.models.vit import create_vit

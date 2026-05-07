@@ -48,7 +48,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.svhn import SVHN
+    from anonymous_datasets.images.svhn import SVHN
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds = SVHN(split="train")

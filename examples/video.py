@@ -1,7 +1,7 @@
-"""Video dataset example for stable-datasets."""
+"""Video dataset example for anonymous-datasets."""
 
-from stable_datasets import VideoDecodeConfig
-from stable_datasets.video import SSv2
+from anonymous_datasets import VideoDecodeConfig
+from anonymous_datasets.video import SSv2
 
 
 def main() -> None:

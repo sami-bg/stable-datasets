@@ -12,7 +12,7 @@ import os
 
 import hydra
 import lightning as pl
-import stable_pretraining as spt
+import anonymous_pretraining_lib as spt
 import torch
 from hydra.core.hydra_config import HydraConfig
 from lightning.pytorch.callbacks import ModelCheckpoint

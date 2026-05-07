@@ -48,7 +48,7 @@ Usage Example
 
 .. code-block:: text
 
-	from stable_datasets.images.tiny_imagenet_c import TinyImagenetC
+	from anonymous_datasets.images.tiny_imagenet_c import TinyImagenetC
 
 	# Loads the corrupted test split (download + prepare happens on first call)
 	ds = TinyImagenetC(split="test")

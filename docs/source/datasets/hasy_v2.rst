@@ -70,7 +70,7 @@ You can specify a ``config_name`` to choose which cross-validation fold to use. 
 
 .. code-block:: python
 
-    from stable_datasets.images.hasy_v2 import HASYv2
+    from anonymous_datasets.images.hasy_v2 import HASYv2
 
     # Load the standard benchmark split (Fold 1)
     ds_train = HASYv2(config_name="fold-1", split="train")

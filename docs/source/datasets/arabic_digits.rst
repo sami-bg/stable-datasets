@@ -47,7 +47,7 @@ Usage Example
 
 .. code-block:: python
 
-    from stable_datasets.images.arabic_digits import ArabicDigits
+    from anonymous_datasets.images.arabic_digits import ArabicDigits
 
     # First run will download + prepare cache, then return the split as a HF Dataset
     ds_train = ArabicDigits(split="train")
